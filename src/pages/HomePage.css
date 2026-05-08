@@ -1,0 +1,33 @@
+@keyframes shine-button{
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: inset 0 0 10px 15px rgba(93, 91, 91, 0.144), 1px 1px 150px rgb(255, 255, 255);
+  }
+  100% {
+    box-shadow: none
+  }
+}
+.presentationPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position:center ;
+  color: white
+  
+}
+.presentationButton {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  animation: shine-button 4s ease-in-out infinite
+}
