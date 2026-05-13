@@ -5,6 +5,7 @@ import Tecnologies from "../components/Tecnologies.jsx"
 import { useState } from "react"
 import Projects from "../components/Projects.jsx"
 import "./PresentationPage.css"
+import "../assets/styles.css"
 
 function PresentationPage() {
   const [id, setId] = useState("aboutme")
@@ -33,6 +34,7 @@ function PresentationPage() {
         <h2>Santiago Rodrigues</h2>
         <Link to={"/"}>
           <button
+            className="button"
             style={{
               position: "absolute",
               right: 30,
@@ -77,17 +79,7 @@ function PresentationPage() {
         >
           {id === "tecnologies" ? (
             <button
-              style={{
-                cursor: "pointer",
-                color: "white",
-                background: "rgba(178, 177, 177, 0.28)",
-                borderRadius: "5px",
-                border: "none",
-                padding: "10px",
-                marginBottom: "50px",
-                fontSize: "1rem",
-                width: 200,
-              }}
+              className="button"
               onClick={() => {
                 setId("aboutme")
               }}
@@ -96,17 +88,7 @@ function PresentationPage() {
             </button>
           ) : (
             <button
-              style={{
-                cursor: "pointer",
-                color: "white",
-                background: "rgba(178, 177, 177, 0.28)",
-                borderRadius: "5px",
-                border: "none",
-                padding: "10px",
-                marginBottom: "50px",
-                fontSize: "1rem",
-                width: 200,
-              }}
+              className="button"
               onClick={() => {
                 setId("tecnologies")
               }}

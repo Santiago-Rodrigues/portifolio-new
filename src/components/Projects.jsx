@@ -1,7 +1,11 @@
+import Forca from './minigames/Forca.jsx'
+
 function Projects() {
   return (
     <>
-      <div>teste</div>
+      <div>
+        <Forca/>
+      </div>
     </>
   )
 }
